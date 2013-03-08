@@ -1,6 +1,6 @@
 //Shaun Thompson
-//VFW 1302 - Project 4
-//02/28/2013
+//MiU 1302 - Project 1
+//03/07/13
 
 
 // Wait until the DOM is ready
@@ -280,7 +280,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	};
 	
 	//Variable Defaults
-	var mealType = ["--- Choose A Meal Type ---", "Breakfast", "Lunch", "Dinner", "Other"],
+	var mealType = ["--- Choose A Meal Type ---", "Breakfast", "Lunch", "Dinner", "Snack", "Other"],
 		groupValue,
 		errMsg = $('errors');
 		
