@@ -1,6 +1,6 @@
 //Shaun Thompson
-//VFW 1302 - Project 4
-//02/28/2013
+//MiU 1303 - Project 1
+//03/07/13
 //JSON Object
 
 var json = {
