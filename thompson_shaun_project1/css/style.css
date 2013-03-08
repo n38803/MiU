@@ -10,7 +10,7 @@ body{background-color:#FFFFFF;font-family: Arial, Helvetica, san-serif;width: 48
 h1{
 	margin: 0px;
 	border: 0px;
-	padding: 10px;
+	padding: 16px;
 	text-align: center;
 	font-style: italic;
 	color: #FFFFFF;
@@ -20,7 +20,7 @@ h1{
 h2{
 	margin: 0px;
 	border: 0px;
-	padding: 10px;
+	padding: 14px;
 	text-align: center;
 	font-style: italic;
 	color: #FFFFFF;
@@ -31,14 +31,14 @@ p{
 	color: #000000;
 	font-style: italic;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 12px;
 }
 
 div{
 	color: #000000;
 	font-style: italic;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 12px;
 	text-align: center;
 }
 	
@@ -46,7 +46,7 @@ footer{
 	color: #000000;
 	font: "Times New Roman", Times;
 	text-align: center;
-	font-size: 14px;
+	font-size: 8px;
 	font-weight: bold;
 }
 
@@ -79,7 +79,7 @@ li{
 errors{
 	color: #ff0000;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 12px;
 
 a{
 	color: #000000;
