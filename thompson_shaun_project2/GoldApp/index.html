@@ -25,19 +25,27 @@
 
 		<div data-role="page" id="home">
 		
+		<div data-role="header" data-position="fixed" data-id="home">
+		
+			<h4>Health & Wellness</h4>
+				
+		</div>
 		
 		<div data-role="content">
 		
+			<p align="center">
 			<img src="images/feature.png"></img>
-			<img src="images/cta.png"></img>		
-			<img src="images/browse.png"></img>
-				
-			<ul data-role="listview" data-inset="true" data-theme="a">
-				<li><a href="#collapse">Healthy Habits</a></li>
-				<li><a href="#collapse">Nutrition Guide</a></li>
-				<li><a href="#collapse">Food & Recipes</a><span class="ui-li-count">12</span></li>
-				<li><a href="#collapse">Diet</a></li>
-				<li><a href="#collapse">Exercise</a></li>	
+			<a href="additem.html"><img src="images/cta.png"></img></a>
+			</p>
+			
+			
+			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
+				<li data-role="list-divider" data-theme="b"><div align="center">BROWSE BY CATEGORY</div></li>
+				<li><a href="#error">Healthy Habits</a></li>
+				<li><a href="#error">Nutrition Guide</a></li>
+				<li><a href="#error">Food & Recipes</a><span class="ui-li-count">12</span></li>
+				<li><a href="#error">Diet</a></li>
+				<li><a href="#exercise">Exercise</a></li>	
 			</ul>
 	
 
@@ -46,49 +54,24 @@
 		<div data-role="footer" data-position="fixed" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" class="ui-btn-active">Home</a></li>
-					<li><a href="#info">Info</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="additem.html">Tracker</a></li>
+					<li><a href="#home" data-icon="home" data-posicon="top" class="ui-btn-active" >Home</a></li>
+					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
+					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
+					<li><a href="additem.html" data-icon="edit" data-posicon="top">Tracker</a></li>
 				</ul>
 			</div>
 		</div>
 		
 	</div>
-	
-		<div data-role="page" id="info">
-		
-		<div data-role="header" data-position="fixed">
-		
-			<h1>Title of Application</h1>
-					
-		</div>
-		
-		<div data-role="content">
-			<h3>Information</h3>
-		</div>
-		
-		<div data-role="footer" data-position="fixed" data-id="home">
-			<h4>Footer</h4>
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#info" class="ui-btn-active">Information</a></li>
-					<li><a href="#news">News Stream</a></li>
-					<li><a href="#add">Track Meal</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-	
+
 		<div data-role="page" id="news">
 		
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Title of Application</h1>
-					
+			<h4>Health & Wellness</h4>
+				
 		</div>
+		
 		
 		<div data-role="content">
 			<h3>News</h3>
@@ -108,48 +91,51 @@
 		
 	</div>
 	
-		<div data-role="page" id="images" data-add-back-btn="true">
+		<div data-role="page" id="error">
 		
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Images</h1>
+			<h1>Health & Wellness</h1>
 					
 		</div>
 		
 		<div data-role="content">
+			<h3>Error 404: Your content cannot be found!</h3>
+			<p>The information you are attempting to access cannot be located.  Please hit the back button and make another selection.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#info">Information</a></li>
+					<li><a href="#news">News Stream</a></li>
+					<li><a href="#add">Track Meal</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+		<div data-role="page" id="exercise" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed" data-id="home">
+		
+			<h4>Health & Wellness</h4>
+				
+		</div>
+		
+		
+		<div data-role="content">
 		
 			<div class="ui-grid-a">
-				<div class="ui-block-a">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">Left List</li>
-						<li>Item 1</li>
-						<li>Item 2</li>
-						<li>Item 3</li>
-					</ul>
-				</div>
-				
-				<div class="ui-block-b">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">Left List</li>
-						<li>Item 1</li>
-						<li>Item 2</li>
-						<li>Item 3</li>
-					</ul>
-				</div>
-				
-			</div>
 			
-			<div class="ui-grid-b">
-			
-				<div class="ui-block-a"><div class="ui-bar ui-bar-a">Photo</div></div>
-				<div class="ui-block-b">Photo</div>
-				<div class="ui-block-c">Photo</div>
-				<div class="ui-block-a">Photo</div>
-				<div class="ui-block-b">Photo</div>
-				<div class="ui-block-c">Photo</div>
-				<div class="ui-block-a">Photo</div>
-				<div class="ui-block-b">Photo</div>
-				<div class="ui-block-c">Photo</div>
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/stretching.jpg"></img><p>Stretching</p></a></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-b"><a href="#error"><img src="images/cardio.jpg"></img><p>Cardio</p></a></div></div>
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/weight.jpg"></img><p>FreeWeights</p></a></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-b"><a href="#error"><img src="images/waterloss.jpg"></img><p>Water Loss</p></a></div></div>
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/yardwork.jpg"></img><p>Every Day Activities</p></a></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-b"><a href="#error"><img src="images/neural.jpg"></img><p>Neural</p></a></div></div>
 				
 			</div>
 		
@@ -174,11 +160,12 @@
 
 		<div data-role="page" id="collapse" data-add-back-btn="true">
 		
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Collapsable Menu</h1>
-					
+			<h4>Health & Wellness</h4>
+				
 		</div>
+		
 		
 		<div data-role="content">
 
@@ -244,9 +231,12 @@
 
 		<div data-role="page" id="test" data-add-back-btn="true">
 		
-		<div data-role="header" data-position="fixed">
-			<h1>Information Page</h1>
+		<div data-role="header" data-position="fixed" data-id="home">
+		
+			<h4>Health & Wellness</h4>
+				
 		</div>
+		
 		
 		<div data-role="content">
 			<p>OMG this looks so cool!!!!</p>
