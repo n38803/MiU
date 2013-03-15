@@ -1,6 +1,6 @@
 /*
 Shaun M Thompson
-MiU 1303 - Project 1
+MiU 1303 - Project 2
 */
 
 body{background-color:#FFFFFF;font-family: Arial, Helvetica, san-serif;width: 480px;margin: auto;padding: 10px}
@@ -11,25 +11,20 @@ h1{
 	margin: 0px;
 	border: 0px;
 	padding: 16px;
-	text-align: center;
-	font-style: italic;
 	color: #FFFFFF;
-	font-size: 55px;
+
 }
 
-h2{
+h3{
 	margin: 0px;
 	border: 0px;
 	padding: 14px;
-	text-align: center;
-	font-style: italic;
 	color: #FFFFFF;
-	font-size: 35px;
+	text-align: center;
 }
 
 p{
 	color: #000000;
-	font-style: italic;
 	font-weight: bold;
 	font-size: 12px;
 }
@@ -39,8 +34,7 @@ div{
 	font-style: italic;
 	font-weight: bold;
 	font-size: 12px;
-	text-align: center;
-}
+	}
 	
 footer{
 	color: #000000;
