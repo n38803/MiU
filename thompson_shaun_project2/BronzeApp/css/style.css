@@ -7,21 +7,7 @@ body{background-color:#FFFFFF;font-family: Arial, Helvetica, san-serif;width: 48
 #site-wrapper{no-repeat;height: 885px;padding-top:}
 #content{width: 480;height; 690px;overflow; scroll;}
 
-h1{
-	margin: 0px;
-	border: 0px;
-	padding: 16px;
-	color: #FFFFFF;
 
-}
-
-h2{
-	margin: 0px;
-	border: 0px;
-	padding: 14px;
-	color: #FFFFFF;
-	text-align: center;
-}
 
 p{
 	color: #000000;
@@ -30,7 +16,7 @@ p{
 }
 
 div{
-	color: #000000;
+
 	font-style: italic;
 	font-weight: bold;
 	font-size: 12px;
@@ -67,7 +53,6 @@ select:focus{
 li{
 	display: block;
 	border: 0px;
-	text-align: left;
 }
 
 errors{
