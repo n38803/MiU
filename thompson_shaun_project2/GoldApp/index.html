@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Shaun Thompson - Project 2 - 1303 --> 
+<!-- Shaun Thompson - Project 2 [Gold App]- 1303 --> 
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -25,19 +25,27 @@
 
 		<div data-role="page" id="home">
 		
+		<div data-role="header" data-position="fixed" data-id="home">
+		
+			<h4>Health & Wellness</h4>
+				
+		</div>
 		
 		<div data-role="content">
 		
+			<p align="center">
 			<img src="images/feature.png"></img>
-			<img src="images/cta.png"></img>		
-			<img src="images/browse.png"></img>
-				
-			<ul data-role="listview" data-inset="true" data-theme="a">
-				<li><a href="#collapse">Healthy Habits</a></li>
-				<li><a href="#collapse">Nutrition Guide</a></li>
-				<li><a href="#collapse">Food & Recipes</a><span class="ui-li-count">12</span></li>
-				<li><a href="#collapse">Diet</a></li>
-				<li><a href="#collapse">Exercise</a></li>	
+			<a href="additem.html"><img src="images/cta.png"></img></a>
+			</p>
+			
+			
+			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
+				<li data-role="list-divider" data-theme="b"><div align="center">BROWSE BY CATEGORY</div></li>
+				<li><a href="#error">Healthy Habits</a></li>
+				<li><a href="#nutrition">Nutrition Guide</a><span class="ui-li-count">6</span></li>
+				<li><a href="#error">Food & Recipes</a></li>
+				<li><a href="#error">Diet</a></li>
+				<li><a href="#exercise">Exercise</a><span class="ui-li-count">6</span></li>	
 			</ul>
 	
 
@@ -46,30 +54,40 @@
 		<div data-role="footer" data-position="fixed" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" class="ui-btn-active">Home</a></li>
-					<li><a href="#info">Info</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="additem.html">Tracker</a></li>
+					<li><a href="#home" data-icon="home" data-posicon="top" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
+					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
+					<li><a href="additem.html" data-icon="edit" data-posicon="top">Tracker</a></li>
 				</ul>
 			</div>
 		</div>
 		
 	</div>
-	
-		<div data-role="page" id="info">
+
+		<div data-role="page" id="info" data-add-back-btn="true">
 		
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Title of Application</h1>
+			<h1>Health & Wellness</h1>
 					
 		</div>
 		
 		<div data-role="content">
-			<h3>Information</h3>
+			
+			<ul data-role="listview" data-inset="true" data-theme="b">
+				<li><a href="#credits">Credits</a></li>
+				<li><a href="#error">Author Information</a></li>
+				<li><a href="GoldApp/index.html">Gold Application</a></li>
+				<li><a href="BronzeApp/index.html">Bronze Application</a></li>
+				<li><a href="#error">Gold gh-pages</a></li>	
+				<li><a href="thompson_shaun_project2/BronzeApp/index.html">Bronze Application</a></li>
+				<li><a href="https://github.com/n38803/MiU.git">MiU Repository</a></li>
+			</ul>
 		</div>
 		
 		<div data-role="footer" data-position="fixed" data-id="home">
-			<h4>Footer</h4>
+		
+		
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
@@ -81,14 +99,15 @@
 		</div>
 		
 	</div>
-	
-		<div data-role="page" id="news">
+
+		<div data-role="page" id="news" data-add-back-btn="true">
 		
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Title of Application</h1>
-					
+			<h4>Health & Wellness</h4>
+				
 		</div>
+		
 		
 		<div data-role="content">
 			<h3>News</h3>
@@ -108,167 +127,20 @@
 		
 	</div>
 	
-		<div data-role="page" id="images" data-add-back-btn="true">
+		<div data-role="page" id="error" data-add-back-btn="true">
 		
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Images</h1>
+			<h1>Health & Wellness</h1>
 					
 		</div>
 		
 		<div data-role="content">
-		
-			<div class="ui-grid-a">
-				<div class="ui-block-a">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">Left List</li>
-						<li>Item 1</li>
-						<li>Item 2</li>
-						<li>Item 3</li>
-					</ul>
-				</div>
-				
-				<div class="ui-block-b">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">Left List</li>
-						<li>Item 1</li>
-						<li>Item 2</li>
-						<li>Item 3</li>
-					</ul>
-				</div>
-				
-			</div>
-			
-			<div class="ui-grid-b">
-			
-				<div class="ui-block-a"><div class="ui-bar ui-bar-a">Photo</div></div>
-				<div class="ui-block-b">Photo</div>
-				<div class="ui-block-c">Photo</div>
-				<div class="ui-block-a">Photo</div>
-				<div class="ui-block-b">Photo</div>
-				<div class="ui-block-c">Photo</div>
-				<div class="ui-block-a">Photo</div>
-				<div class="ui-block-b">Photo</div>
-				<div class="ui-block-c">Photo</div>
-				
-			</div>
-		
-		
-		
-		
+			<h3>Error 404: Your content cannot be found!</h3>
+			<p>The information you are attempting to access cannot be located.  Please hit the back button and make another selection.</p>
 		</div>
 		
 		<div data-role="footer" data-position="fixed" data-id="home">
-			<h4>Footer</h4>
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#info">Information</a></li>
-					<li><a href="#news">News Stream</a></li>
-					<li><a href="#add" class="ui-btn-active">Track Meal</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-
-		<div data-role="page" id="collapse" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed">
-		
-			<h1>Collapsable Menu</h1>
-					
-		</div>
-		
-		<div data-role="content">
-
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Collapsable Item 1</h3>
-				<p>This holds content for the item</p>
-			</div>
-			
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Collapsable Item 2</h3>
-				<p>This holds content for the item</p>
-			</div>
-			
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Collapsable Item 3</h3>
-				<p>This holds content for the item</p>
-			</div>
-			
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Collapsable Item 4</h3>
-				<p>This holds content for the item</p>
-			</div>
-			
-			<div data-role="collapsible-set">
-				
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Collapsable Item 1</h3>
-					<p>This holds content for the item</p>
-				</div>
-			
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Collapsable Item 2</h3>
-					<p>This holds content for the item</p>
-				</div>
-			
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Collapsable Item 3</h3>
-					<p>This holds content for the item</p>
-				</div>
-			
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Collapsable Item 4</h3>
-					<p>This holds content for the item</p>
-				</div>
-			
-			</div>
-
-		</div>
-		
-		<div data-role="footer" data-position="fixed" data-id="home">
-			<h4>Footer</h4>
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#info">Information</a></li>
-					<li><a href="#news">News Stream</a></li>
-					<li><a href="#add" class="ui-btn-active">Track Meal</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
-
-		<div data-role="page" id="test" data-add-back-btn="true">
-		
-		<div data-role="header" data-position="fixed">
-			<h1>Information Page</h1>
-		</div>
-		
-		<div data-role="content">
-			<p>OMG this looks so cool!!!!</p>
-			
-			<ul data-role="listview">
-			 	<li>
-			 		<a href="testlink.html">
-			 			<img src="images/gold.jpg"></img>
-			 			<h3>List Header</h3>
-			 			<p>Inner List Description</p>
-			 		</a>
-			 	</li>
-				<li>test1</li>
-				<li>test2</li>
-				<li>test3</li>
-				<li>test4</li>
-			</ul>
-
-		</div>
-		
-		<div data-role="footer" data-position="fixed" data-id="home">
-		
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
@@ -277,12 +149,145 @@
 					<li><a href="#add">Track Meal</a></li>
 				</ul>
 			</div>
+		</div>
+		
+	</div>
+	
+		<div data-role="page" id="exercise" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed" data-id="home">
+		
+			<h4>Health & Wellness</h4>
 				
 		</div>
 		
-	</div>	
+		
+		<div data-role="content">
+		
+			<div class="ui-grid-a">
+			
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/stretching.jpg"></img><p>Stretching</p></a></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/cardio.jpg"></img><p>Cardio</p></a></div></div>
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/weight.jpg"></img><p>FreeWeights</p></a></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/yardwork.jpg"></img><p>OutDoors</p></a></div></div>
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/waterloss.jpg"></img><p>Water Loss</p></a></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-a"><a href="#error"><img src="images/success.jpg"></img><p>Success</p></a></div></div>
+				
+			</div>
+		
+		
+		
+		
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<h4>Footer</h4>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#info">Information</a></li>
+					<li><a href="#news">News Stream</a></li>
+					<li><a href="#add">Track Meal</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
 
+		<div data-role="page" id="nutrition" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed" data-id="home">
+		
+			<h4>Health & Wellness</h4>
+				
+		</div>
+		
+		
+		<div data-role="content">
+			
+			<div data-role="collapsible-set" data-theme="a">
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Fats</h3>
+					<p>The food pyramid advises that fats be consumed sparingly. Butter and oils are examples of fats. Healthy sources of fat can be found in fish, nuts, and certain fruits and vegetables, such as avocados.</p>
+				</div>
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Meats</h3>
+					<p>All muscle tissue is very high in protein, containing all of the essential amino acids, and in most cases is a good source of zinc, vitamin B12, selenium, phosphorus, niacin, vitamin B6, choline, riboflavin and iron.[56] Several forms of meat are high in vitamin K2,[57] which is only otherwise known to be found in fermented foods[citation needed], with natto having the highest concentration.[57] Muscle tissue is very low in carbohydrates and does not contain dietary fiber.[58] The fat content of meat can vary widely depending on the species and breed of animal, the way in which the animal was raised, including what it was fed, the anatomical part of the body, and the methods of butchering and cooking. Wild animals such as deer are typically leaner than farm animals, leading those concerned about fat content to choose game such as venison. Decades of breeding meat animals for fatness is being reversed by consumer demand for meat with less fat.</p>
+				</div>
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Dairy</h3>
+					<p>Dairy products are produced from the milk of mammals, most usually but not exclusively cattle. They include milk, yogurt and cheese. Milk and its derivative products are a rich source of dietary calcium, but also provide protein, phosphorus, vitamin A, and vitamin D. However, many dairy products are high in saturated fat and cholesterol compared to vegetables, fruits and whole grains, which is why skimmed products are available as an alternative. For adults, three cups of dairy products are recommended per day.</p>
+				</div>
+			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Vegetable</h3>
+					<p>A vegetable is a part of a plant consumed by humans that is generally savory but is not sweet. A vegetable is not considered a grain, fruit, nut, spice, or herb. For example, the stem, root, flower, etc., may be eaten as vegetables. Vegetables contain many vitamins and minerals; however, different vegetables contain different spreads, so it is important to eat a wide variety of types. For example, green vegetables typically contain vitamin A, dark orange and dark green vegetables contain vitamin C,and vegetables like broccoli and related plants contain iron and calcium. Vegetables are very low in fats and calories, but ingredients added in preparation can often add these.</p>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Fruit</h3>
+					<p>In terms of food (rather than botany), fruits are the sweet-tasting seed-bearing parts of plants, or occasionally sweet parts of plants which do not bear seeds. These include apples, oranges, plums, bananas, etc. Fruits are low in calories and fat and are a source of natural sugars, fiber and vitamins. Processing fruits when canning or making into juices may add sugars and remove nutrients. The fruit food group is sometimes combined with the vegetable food group. Note that many foods considered fruits in botany because they bear seeds are not considered fruits in cuisine because they lack the characteristic sweet taste, e.g., tomatos or avocados.</p>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Grain</h3>
+					<p>Grains are small, hard, dry seeds (with or without hull or fruit layers attached) harvested for human food or animal feed.[1] Agronomists also call the plants producing such seeds 'grains' or 'grain crops'.</p>
+					<p>Harvested, dry grain has advantages over other staple foods such as the starchy fruits (e.g., plantain, breadfruit) and roots/tubers (e.g., sweet potato, cassava, yam) in being easy to store, handle and transport. In particular, these qualities have allowed mechanical harvesting, transporting by rail or ship, long-term storage in grain silos, large-scale milling or pressing and industrial agriculture in general. Thus, major commodity exchanges deal with soybean, rice, wheat, maize, canola, and other grains but not in vegetables, tubers, or many other crops</p>
+				</div>
+			
+			</div>
 
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<h4>Footer</h4>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#info">Information</a></li>
+					<li><a href="#news">News Stream</a></li>
+					<li><a href="#add">Track Meal</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+		<div data-role="page" id="credits" data-add-back-btn="true">
+		
+		<div data-role="header" data-position="fixed" data-id="home">
+		
+			<h1>Health & Wellness</h1>
+					
+		</div>
+		
+		<div data-role="content">
+			<h3>Credits:</h3>
+			<ul>
+				<li>This applications change in direction was inspired by health.com</li>
+				<li>This application's nutrition content was obtained from wikipedia.org</li>
+				<li>This application's images were obtained from istockphoto.com</li>
+				<li>JQM Coding thanks to jquerymobile.com & activity videos</li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#info">Information</a></li>
+					<li><a href="#news">News Stream</a></li>
+					<li><a href="#add">Track Meal</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	
 
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
