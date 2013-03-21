@@ -296,90 +296,59 @@
 		</div>
 		
 		<div data-role="content">
-			<h3>Form Test:</h3>
+			<h3>Meal Tracker:</h3>
 			
 			<form action="" method="post" id="calform">
 
 				<div data-role="fieldcontain">
-					<label for="bootylocation">Location:</label>
-					<input type="text" name="bootylocation" id="bootylocation" class="required" />
-				</div>	
-
-				<div data-role="fieldcontain">	
-					<label for="bootydeaths">Deaths:</label>
-					<input type="text" name="bootydeaths" id="bootydeaths" />
-				</div>	
-
-				<div data-role="fieldcontain">
-					<label for="bootysearch">Search:</label>
-					<input type="search" name="bootysearch" id="bootysearch" />
-				</div>
-	
-				<div data-role="fieldcontain">
-					<label for="bootyproblems">Problems:</label>
-					<textarea></textarea>
-				</div>	
-
-				<div data-role="fieldcontain">
-					<label for="bootygold">Gold Found:</label>
-					<input type="range" name="bootygold" id="bootygold" value="0" min="0" max="5000" />
-				</div>
-
-				<div data-role="fieldcontain">
-					<label for="bootynatives">Natives?</label>
-					<select data-role="slider">
-						<option value="off">Nope</option>
-						<option value="on">Yep</option>
-					</select>
-				</div>
-
-				<div data-role="fieldcontain">
-					<fieldset data-role="controlgroup">
-						<legend>Your Role:</legend>	
-						<input type="radio" value="swashbuckler" name="booty-role" id="booty-role1" class="required" />
-						<label for="booty-role1">Swashbuckler</label>
-						<input type="radio" value="musketeer" name="booty-role" id="booty-role2" />
-						<label for="booty-role2">Musketeer</label>
-						<input type="radio" value="cooper" name="booty-role" id="booty-role3" />
-						<label for="booty-role3">Cooper</label>		
-					</fieldset>
-				</div>
-
-				<div data-role="fieldcontain">
-					<fieldset data-role="controlgroup" data-type="horizontal">
-						<legend>Loot Found:</legend>	
-						<input type="checkbox" value="pistols" name="booty-loot" id="booty-loot1" class="required" />
-						<label for="booty-loot1">Pistols</label>
-						<input type="checkbox" value="swords" name="booty-loot" id="booty-loot2" />
-						<label for="booty-loot2">Swords</label>
-						<input type="checkbox" value="rats" name="booty-loot" id="booty-loot3" />
-						<label for="booty-loot3">Rats</label>
-					</fieldset>
+					<label for="date">Date</label>
+					<input type="date" name="date" id="date" class="required" />
 				</div>
 				
 				<div data-role="fieldcontain">
-					<label for="booty-shipping">Shipping</label>
-					<select name="booty-shipping" id="booty-shipping" data-native-menu="false" class="required">
-						<option data-placeholder="true">Please Select One</option>
-						<optgroup label="Fedex">	
-							<option value="overnight">Overnight</option>
-							<option value="express">Express</option>
-							<option value="standard">Standard</option>
-						</optgroup>
-						<optgroup label="USPS">
-							<option value="overnight">Overnight</option>
-							<option value="express">Express</option>
-							<option value="standard">Standard</option>
-						</optgroup>
+					<label for="type">Meal Type</label>
+					<select name="type" id="select" data-native-menu="false" class="required">
+						<option data-placeholder="true">-- Please Select One --</option>	
+							<option value="breakfast" class="required">Breakfast</option>
+							<option value="lunch">Lunch</option>
+							<option value="dinner">Dinner</option>
+							<option value="snack">Snack</option>
+							<option value="other">Other</option>
 					</select>
 				</div>
-
-
+				
 				<div data-role="fieldcontain">
-					<input type="reset" value="Reset" data-theme="a" />
-					<input type="submit" value="Submit" data-theme="c" />
+					<fieldset data-role="controlgroup">
+						<legend>Food Group</legend>	
+						<input type="radio" value="Meat" name="group" id="meat" class="required" /><label for="meat">Meat</label>
+						<input type="radio" value="Vegetable" name="group" id="vegetable" /><label for="vegetable">Vegetable</label>
+						<input type="radio" value="Fruit" name="group" id="fruit" /><label for="fruit">Fruit</label>
+						<input type="radio" value="Grain" name="group" id="grain" /><label for="grain">Grain</label>
+						<input type="radio" value="Dairy" name="group" id="dairy" /><label for="dairy">Dairy</label>
+					</fieldset>
+				</div>	
+
+				<div data-role="fieldcontain">	
+					<label for="name">Food Name</label>
+					<input type="text" name="name" id="name" placeholder="Steak, Apple, Popcorn, etc." class="required" />
+				</div>	
+				
+				<div data-role="fieldcontain">
+					<label for="calories">Calorie Amount</label>
+					<input type="range" name="calories" id="calories" value="0" min="0" max="3000" />
 				</div>
-				</form>
+	
+				<div data-role="fieldcontain">
+					<label for="notes">Additional Notes</label>
+					<textarea id="notes" placeholder="How was it prepared or cooked? How did it taste? How much of it did you eat?"></textarea>
+				</div>
+				
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><input type="submit" value="Submit" data-theme="a" /></div>
+					<div class="ui-block-b"><input type="reset" value="Reset" data-theme="c"></div>
+				</div>	
+				
+			</form>
 				
 				<a href="#formerrors" id="errorslink" data-rel="dialog">Open Errors</a>
 		
