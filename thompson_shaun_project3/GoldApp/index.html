@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Shaun Thompson - Project 2 [Gold App]- 1303 --> 
+<!-- Shaun Thompson - Project 3 [Gold App]- 1303 --> 
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -57,7 +57,7 @@
 					<li><a href="#home" data-icon="home" data-posicon="top" class="ui-btn-active">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top" >Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top" >News</a></li>
-					<li><a href="#formtest" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -287,7 +287,7 @@
 		
 	</div>
 	
-	<div data-role="page" id="formtest" data-add-back-btn="true">
+	<div data-role="page" id="tracker" data-add-back-btn="true">
 		
 		<div data-role="header" data-position="fixed" data-id="home">
 		
@@ -298,11 +298,11 @@
 		<div data-role="content">
 			<h3>Form Test:</h3>
 			
-			<form action="" method="post" id="recordbootyform">
+			<form action="" method="post" id="calform">
 
 				<div data-role="fieldcontain">
 					<label for="bootylocation">Location:</label>
-					<input type="text" name="bootylocation" id="bootylocation" />
+					<input type="text" name="bootylocation" id="bootylocation" class="required" />
 				</div>	
 
 				<div data-role="fieldcontain">	
@@ -322,7 +322,7 @@
 
 				<div data-role="fieldcontain">
 					<label for="bootygold">Gold Found:</label>
-					<input type="rangne" name="bootygold" id="bootygold" value="0" min="0" max="5000" />
+					<input type="range" name="bootygold" id="bootygold" value="0" min="0" max="5000" />
 				</div>
 
 				<div data-role="fieldcontain">
@@ -336,7 +336,7 @@
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Your Role:</legend>	
-						<input type="radio" value="swashbuckler" name="booty-role" id="booty-role1" />
+						<input type="radio" value="swashbuckler" name="booty-role" id="booty-role1" class="required" />
 						<label for="booty-role1">Swashbuckler</label>
 						<input type="radio" value="musketeer" name="booty-role" id="booty-role2" />
 						<label for="booty-role2">Musketeer</label>
@@ -348,7 +348,7 @@
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup" data-type="horizontal">
 						<legend>Loot Found:</legend>	
-						<input type="checkbox" value="pistols" name="booty-loot" id="booty-loot1" />
+						<input type="checkbox" value="pistols" name="booty-loot" id="booty-loot1" class="required" />
 						<label for="booty-loot1">Pistols</label>
 						<input type="checkbox" value="swords" name="booty-loot" id="booty-loot2" />
 						<label for="booty-loot2">Swords</label>
@@ -359,7 +359,7 @@
 				
 				<div data-role="fieldcontain">
 					<label for="booty-shipping">Shipping</label>
-					<select name="booty-shipping" id="booty-shipping" data-native-menu="false">
+					<select name="booty-shipping" id="booty-shipping" data-native-menu="false" class="required">
 						<option data-placeholder="true">Please Select One</option>
 						<optgroup label="Fedex">	
 							<option value="overnight">Overnight</option>
@@ -380,17 +380,34 @@
 					<input type="submit" value="Submit" data-theme="c" />
 				</div>
 				</form>
+				
+				<a href="#formerrors" id="errorslink" data-rel="dialog">Open Errors</a>
 		
 			</div>
 	
 	</div>
 	
+	<div data-role="dialog" id="formerrors">
+		
+		<div data-role="header" data-position="fixed">
+		
+			<h4>Missing Fields</h4>
+				
+		</div>
+		
+		<div data-role="content">
 	
+			<ul>
+				<li>Test</li>
+			</ul>
+		</div>
+	
+	</div>
 
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
 		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/nmain.js"></script>
 
 	</body>
 		
