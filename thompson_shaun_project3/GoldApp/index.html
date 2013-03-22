@@ -68,7 +68,7 @@
 		
 		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Health & Wellness</h1>
+			<h3>Health & Wellness</h3>
 					
 		</div>
 		
@@ -78,9 +78,9 @@
 				<li><a href="#credits">Additional Information</a></li>
 				<li><a href="">Gold Application</a></li>
 				<li><a href="">Bronze Application</a></li>
-				<li><a href="https://github.com/n38803/MiU/tree/gh-pages/thompson_shaun_project2/GoldApp">Gold gh-pages</a></li>	
-				<li><a href="https://github.com/n38803/MiU/tree/gh-pages/thompson_shaun_project2/BronzeApp">Bronze gh-pages</a></li>
-				<li><a href="https://github.com/n38803/MiU.git">MiU Repository</a></li>
+				<li><a href="https://github.com/n38803/MiU/tree/gh-pages/thompson_shaun_project2/GoldApp" data-ajax="false">Gold gh-pages</a></li>	
+				<li><a href="https://github.com/n38803/MiU/tree/gh-pages/thompson_shaun_project2/BronzeApp" data-ajax="false">Bronze gh-pages</a></li>
+				<li><a href="https://github.com/n38803/MiU.git" data-ajax="false">MiU Repository</a></li>
 			</ul>
 		</div>
 		
@@ -92,7 +92,7 @@
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top" class="ui-btn-active">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
-					<li><a href="additem.html" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -118,7 +118,7 @@
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top" class="ui-btn-active">News</a></li>
-					<li><a href="additem.html" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -144,7 +144,7 @@
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
-					<li><a href="additem.html" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -184,7 +184,7 @@
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
-					<li><a href="additem.html" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -246,7 +246,7 @@
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
-					<li><a href="additem.html" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -280,7 +280,7 @@
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
-					<li><a href="additem.html" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -291,18 +291,20 @@
 		
 		<div data-role="header" data-position="fixed" data-id="home">
 		
-			<h1>Health & Wellness</h1>
+			<h3>Health & Wellness</h3>
 					
 		</div>
 		
 		<div data-role="content">
 			<h3>Meal Tracker:</h3>
 			
+			<p>* Denotes Required Fields</p>
+			
 			<form action="" method="post" id="calform">
 
 				<div data-role="fieldcontain">
-					<label for="date">Date</label>
-					<input type="date" name="date" id="date" class="required" />
+					<label for="date">Date*</label>
+					<input type="date" name="date" id="date" value="2013-03-21" class="required" />
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -319,8 +321,10 @@
 				
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
-						<legend>Food Group</legend>	
-						<input type="radio" value="Meat" name="group" id="meat" class="required" />
+						<legend>Food Group*</legend>	
+						<input type="radio" checked="true" value="Unsure" name="group" id="unsure" class="required" />
+						<label for="unsure">Unsure</label>
+						<input type="radio" value="Meat" name="group" id="meat" />
 						<label for="meat">Meat</label>
 						<input type="radio" value="Vegetable" name="group" id="vegetable" />
 						<label for="vegetable">Vegetable</label>
@@ -334,7 +338,7 @@
 				</div>	
 
 				<div data-role="fieldcontain">	
-					<label for="name">Food Name</label>
+					<label for="name">Food Name*</label>
 					<input type="text" name="name" id="name" placeholder="Steak, Apple, Popcorn, etc." class="required" />
 				</div>	
 				
@@ -357,7 +361,18 @@
 				
 				<a href="#formerrors" id="errorslink" data-rel="dialog">Open Errors</a>
 		
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
+					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
+					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top"  class="ui-btn-active">Tracker</a></li>
+				</ul>
 			</div>
+		</div>
 	
 	</div>
 	
