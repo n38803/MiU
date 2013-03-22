@@ -1,6 +1,6 @@
 //Shaun Thompson
-//MiU 1303 - Project 1
-//03/07/13
+//MiU 1303 - Project 3
+//03/21/13
 //JSON Object
 
 var json = {
