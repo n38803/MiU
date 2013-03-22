@@ -18,10 +18,12 @@
 			<div id="content">
 				<!-- Header -->
 				<header>
-					<p><h1>Track Your Meal!</h1></p>
+					<h1>Track Your Meal!</h1>
+					<p>* Denotes Required Field</p>
 				</header>
 		
 				<nav>
+					<a href="index.html">Return to Homepage</a> - 
 					<a href="#" id="clear">Clear Stored Data</a> - 
 					<a href="#" id="displayLink">View Stored Data</a>
 					<a href="additem.html" id="addNew" style="display:none">Make New Entry</a>
@@ -34,17 +36,18 @@
 						<legend>Tracker</legend>
 							<ul id="errors"></ul>
 							<ol>
-								<li><label for="date">Date: </label><input type="date" id="date"></li>
+								<li><label for="date">Date*: </label><input type="date" id="date" value="2013-03-21"></li>
 								<li id="select"><label for="type">Meal Type:</label></li>		
-								<li>Food Group:</li>
+								<li>Food Group*:</li>
+									<li><input type="radio" checked="true" value="Unsure" id="unsure" name="group"><label for="unsure">Unsure</label></li>
 									<li><input type="radio" value="Meat" id="meat" name="group"><label for="meat">Meat</label></li>
 									<li><input type="radio" value="Vegetable" id="vegetable" name="group"><label for="vegetable">Vegetable</label></li>
 									<li><input type="radio" value="Fruit" id="fruit" name="group"><label for="fruit">Fruit</label></li>
 									<li><input type="radio" value="Grain" id="grain" name="group"><label for="grain">Grain</label></li>
 									<li><input type="radio" value="Dairy" id="dairy" name="group"><label for="dairy">Dairy</label></li>
-								<li><label for="name">Food Name:</label><input type="text" id="name" placeholder="Steak, Apple, Popcorn, Etc"/></li>
+								<li><label for="name">Food Name*:</label><input type="text" id="name" placeholder="Steak, Apple, Popcorn, Etc"/></li>
 								<li><label for="calories">Calorie Amount: </label><input type="range" id="calories" min=1 max=1,000>
-								<li><label for="notes">Additional Notes:</label><textarea id="notes"></textarea></li>
+								<li><label for="notes">Additional Notes:</label><textarea id="notes" placeholder="How was it prepared or cooked? How did it taste? How much of it did you eat?"></textarea></li>
 							</ol>
 							<label type="hidden" value="true" />				
 					</fieldset>

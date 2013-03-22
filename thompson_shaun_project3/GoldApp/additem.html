@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<!-- Shaun Thompson - Project 1 - 1303 -->
+<!-- Shaun Thompson - Project 3 - 1303 -->
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -14,52 +14,112 @@
 	</head>
 	
 	<body>
-		<div id="site-wrapper">
-			<div id="content">
-				<!-- Header -->
-				<header>
-					<p><h1>Track Your Meal!</h1></p>
-				</header>
 		
-				<nav>
-					<a href="#" id="clear">Clear Stored Data</a> - 
-					<a href="#" id="displayLink">View Stored Data</a>
-					<a href="additem.html" id="addNew" style="display:none">Make New Entry</a>
-				</nav>
+			<h3>Health & Wellness</h3>
+					
+		</div>
+		
+			<h3>Meal Tracker:</h3>
+			
+			<p>* Denotes Required Fields</p>
+			
+			<form action="" method="post" id="calform">
+
+				<div data-role="fieldcontain">
+					<label for="date">Date*</label>
+					<input type="date" name="date" id="date" value="2013-03-21" class="required" />
+				</div>
 				
-				<!-- Form -->
-				<p>
-				<form action="#" method="post" id="form">
-					<fieldset>
-						<legend>Tracker</legend>
-							<ul id="errors"></ul>
-							<ol>
-								<li><label for="date">Date: </label><input type="date" id="date"></li>
-								<li id="select"><label for="type">Meal Type:</label></li>		
-								<li>Food Group:</li>
-									<li><input type="radio" value="Meat" id="meat" name="group"><label for="meat">Meat</label></li>
-									<li><input type="radio" value="Vegetable" id="vegetable" name="group"><label for="vegetable">Vegetable</label></li>
-									<li><input type="radio" value="Fruit" id="fruit" name="group"><label for="fruit">Fruit</label></li>
-									<li><input type="radio" value="Grain" id="grain" name="group"><label for="grain">Grain</label></li>
-									<li><input type="radio" value="Dairy" id="dairy" name="group"><label for="dairy">Dairy</label></li>
-								<li><label for="name">Food Name:</label><input type="text" id="name" placeholder="Steak, Apple, Popcorn, Etc"/></li>
-								<li><label for="calories">Calorie Amount: </label><input type="range" id="calories" min=1 max=1,000>
-								<li><label for="notes">Additional Notes:</label><textarea id="notes"></textarea></li>
-							</ol>
-							<label type="hidden" value="true" />				
+				<div data-role="fieldcontain">
+					<label for="type">Meal Type</label>
+					<select name="type" id="select" data-native-menu="false">
+						<option data-placeholder="true">-- Please Select One --</option>	
+							<option value="breakfast" class="required">Breakfast</option>
+							<option value="lunch">Lunch</option>
+							<option value="dinner">Dinner</option>
+							<option value="snack">Snack</option>
+							<option value="other">Other</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Food Group*</legend>	
+						<input type="radio" checked="true" value="Unsure" name="group" id="unsure" class="required" />
+						<label for="unsure">Unsure</label>
+						<input type="radio" value="Meat" name="group" id="meat" />
+						<label for="meat">Meat</label>
+						<input type="radio" value="Vegetable" name="group" id="vegetable" />
+						<label for="vegetable">Vegetable</label>
+						<input type="radio" value="Fruit" name="group" id="fruit" />
+						<label for="fruit">Fruit</label>
+						<input type="radio" value="Grain" name="group" id="grain" />
+						<label for="grain">Grain</label>
+						<input type="radio" value="Dairy" name="group" id="dairy" />
+						<label for="dairy">Dairy</label>
 					</fieldset>
-					<input type="submit" value="Save Meal" id="submit" />
-				</form>
-				</p>
-				<!-- Footer -->
-				<footer>	
-				&copy; SMT Designs - <a href="mailto:ShaunThompson@fullsail.edu">ShaunThompson@FullSail.edu</a>
-				</footer>
+				</div>	
+
+				<div data-role="fieldcontain">	
+					<label for="name">Food Name*</label>
+					<input type="text" name="name" id="name" placeholder="Steak, Apple, Popcorn, etc." class="required" />
+				</div>	
+				
+				<div data-role="fieldcontain">
+					<label for="calories">Calorie Amount</label>
+					<input type="range" name="calories" id="calories" value="0" min="0" max="3000" />
+				</div>
+	
+				<div data-role="fieldcontain">
+					<label for="notes">Additional Notes</label>
+					<textarea id="notes" placeholder="How was it prepared or cooked? How did it taste? How much of it did you eat?"></textarea>
+				</div>
+				
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><input type="submit" value="Submit" data-theme="a" /></div>
+					<div class="ui-block-b"><input type="reset" value="Reset" data-theme="c" /></div>
+				</div>	
+				
+			</form>
+				
+				<a href="#formerrors" id="errorslink" data-rel="dialog">Open Errors</a>
 		
-			<script src="js/main.js" type="text/javascript"></script>
-			<script src="js/json.js" type="text/javascript"></script>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
+					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
+					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
+					<li><a href="#tracker" data-icon="edit" data-posicon="top"  class="ui-btn-active">Tracker</a></li>
+				</ul>
 			</div>
-		</div>	
+		</div>
+	
+	</div>
+	
+	<div data-role="dialog" id="formerrors">
+		
+		<div data-role="header" data-position="fixed">
+		
+			<h4>Missing Fields</h4>
+				
+		</div>
+		
+		<div data-role="content">
+	
+			<ul>
+				<li>Test</li>
+			</ul>
+		</div>
+	
+	</div>
+
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/nmain.js"></script>	
 	</body>	
 		
 </html>
