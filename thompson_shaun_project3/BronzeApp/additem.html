@@ -1,11 +1,17 @@
 <!DOCTYPE html> 
-<!-- Shaun Thompson - Project 2 - 1303 -->
+<!-- Shaun Thompson - Project 3 - 1303 -->
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="This is my second project for Visual Frameworks - A Calorie Counter" />
 		<meta name="keywords" content="Full Sail University, Shaun Thompson, Visual Frameworks Project, Calorie Counter" />
-		<meta name="robots" content="noindex, nofollow" />	
+		<meta name="robots" content="noindex, nofollow" />
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta http-equiv="cleartype" content="on">	
 	
 		<title>SMT Calorie Counter - Add A Meal</title>
 		
@@ -19,17 +25,18 @@
 				<!-- Header -->
 				<header>
 					<h1>Track Your Meal!</h1>
-					<p>* Denotes Required Field</p>
+					<p><a href="index.html">Return to Homepage</a></p>
 				</header>
 		
 				<nav>
-					<a href="index.html">Return to Homepage</a> - 
+				
 					<a href="#" id="clear">Clear Stored Data</a> - 
 					<a href="#" id="displayLink">View Stored Data</a>
 					<a href="additem.html" id="addNew" style="display:none">Make New Entry</a>
 				</nav>
 				
 				<!-- Form -->
+				<p>* Denotes Required Field</p>
 				<p>
 				<form action="#" method="post" id="form">
 					<fieldset>
@@ -51,7 +58,7 @@
 							</ol>
 							<label type="hidden" value="true" />				
 					</fieldset>
-					<input type="submit" value="Save Meal" id="submit" />
+					<input type="submit" value="Save Meal" id="submit" /> | <a href="index.html">Cancel</a>
 				</form>
 				</p>
 				<!-- Footer -->
