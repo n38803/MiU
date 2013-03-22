@@ -307,7 +307,7 @@
 				
 				<div data-role="fieldcontain">
 					<label for="type">Meal Type</label>
-					<select name="type" id="select" data-native-menu="false" class="required">
+					<select name="type" id="select" data-native-menu="false">
 						<option data-placeholder="true">-- Please Select One --</option>	
 							<option value="breakfast" class="required">Breakfast</option>
 							<option value="lunch">Lunch</option>
@@ -320,11 +320,16 @@
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Food Group</legend>	
-						<input type="radio" value="Meat" name="group" id="meat" class="required" /><label for="meat">Meat</label>
-						<input type="radio" value="Vegetable" name="group" id="vegetable" /><label for="vegetable">Vegetable</label>
-						<input type="radio" value="Fruit" name="group" id="fruit" /><label for="fruit">Fruit</label>
-						<input type="radio" value="Grain" name="group" id="grain" /><label for="grain">Grain</label>
-						<input type="radio" value="Dairy" name="group" id="dairy" /><label for="dairy">Dairy</label>
+						<input type="radio" value="Meat" name="group" id="meat" class="required" />
+						<label for="meat">Meat</label>
+						<input type="radio" value="Vegetable" name="group" id="vegetable" />
+						<label for="vegetable">Vegetable</label>
+						<input type="radio" value="Fruit" name="group" id="fruit" />
+						<label for="fruit">Fruit</label>
+						<input type="radio" value="Grain" name="group" id="grain" />
+						<label for="grain">Grain</label>
+						<input type="radio" value="Dairy" name="group" id="dairy" />
+						<label for="dairy">Dairy</label>
 					</fieldset>
 				</div>	
 
@@ -345,7 +350,7 @@
 				
 				<div class="ui-grid-a">
 					<div class="ui-block-a"><input type="submit" value="Submit" data-theme="a" /></div>
-					<div class="ui-block-b"><input type="reset" value="Reset" data-theme="c"></div>
+					<div class="ui-block-b"><input type="reset" value="Reset" data-theme="c" /></div>
 				</div>	
 				
 			</form>
