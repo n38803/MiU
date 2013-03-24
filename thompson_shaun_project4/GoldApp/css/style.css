@@ -1,0 +1,89 @@
+/*
+Shaun M Thompson
+MiU 1303 - Project 3
+*/
+
+body{background-color:#FFFFFF;font-family: Arial, Helvetica, san-serif;width: 480px;margin: auto;padding: 10px}
+#site-wrapper{no-repeat;height: 885px;padding-top:}
+#content{width: 480;height; 690px;overflow; scroll;}
+label.error{display:block; margin:10px 0; color:#cc0000;}
+#errorslink{display:none;}
+
+h1{
+	margin: 0px;
+	border: 0px;
+	padding: 16px;
+	text-align: center;
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 55px;
+}
+
+h2{
+	margin: 0px;
+	border: 0px;
+	padding: 14px;
+	color: #000000;
+}
+
+p{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div{
+	color: #000000;
+	font-weight: bold;
+
+}
+	
+footer{
+	color: #000000;
+	font: "Times New Roman", Times;
+	text-align: center;
+	font-size: 8px;
+	font-weight: bold;
+}
+
+input{
+	background-color: #FFFFFF;
+}
+
+input:focus{
+	border-color: blue;
+	background-color: #888888;
+}
+
+textarea:focus{
+	border-color: blue;
+	background-color: #888888;
+}
+
+select:focus{
+	border-color: blue;
+	background-color: #888888;
+}
+	
+
+li{
+	display: block;
+	border: 0px;
+	text-align: left;
+}
+
+errors{
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 12px;
+
+a{
+	color: #000000;
+}
+
+a:hover{
+	color: #FFFFFF;
+	outline: 0px;
+}
+
+
+	
