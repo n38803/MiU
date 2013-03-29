@@ -23,7 +23,7 @@
 	
 	<body>
 
-		<div data-role="page" id="home">
+	<div data-role="page" id="home">
 		
 		<div data-role="header" data-position="fixed" data-id="home">
 		
@@ -31,18 +31,18 @@
 				
 		</div>
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="a">
 		
 			<p align="center">
 			<img src="images/feature.png"></img>
-			<a href="additem.html"><img src="images/cta.png"></img></a>
+			<a href="additem.html" data-ajax="false"><img src="images/cta.png"></img></a>
 			</p>
 			
-			<div data-role="collapsible-set" data-inset="false" data-theme="a">
+			<div data-role="collapsible-set" data-inset="false">
 				
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Healthy Habits</h3>
-					<ul data-role="listview" data-theme="b">
+					<ul data-role="listview">
 						<li><a href="#error">Sleep Schedule</a></li>
 						<li><a href="#error">Body Alert</a></li>
 						<li><a href="#error">Social Excercise</a></li>
@@ -52,7 +52,7 @@
 			
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Nutrition Guide</h3>
-					<ul data-role="listview" data-theme="b">
+					<ul data-role="listview">
 						<li><a href="#nutrition">Food Pyramid</a></li>
 						<li><a href="#error">Nutrient Intake</a></li>
 						<li><a href="#error">Meal Organizer</a></li>
@@ -61,7 +61,7 @@
 			
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Food & Recipes</h3>
-					<ul data-role="listview" data-theme="b">
+					<ul data-role="listview">
 						<li><a href="#error">Restaurant Nutrition Guides</a></li>
 						<li><a href="#error">Italian</a></li>
 						<li><a href="#error">Thai</a></li>
@@ -72,7 +72,7 @@
 			
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Diet</h3>
-					<ul data-role="listview" data-theme="b">
+					<ul data-role="listview">
 						<li><a href="#error">Healthy Eating Habits</a></li>
 						<li><a href="#error">Portion Sizing</a></li>
 						<li><a href="#error">Water retention</a></li>
@@ -81,7 +81,7 @@
 				
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Excercise</h3>
-					<ul data-role="listview" data-theme="b">
+					<ul data-role="listview">
 						<li><a href="#exercise">Routines</a></li>
 						<li><a href="#error">Personal Trainers</a></li>
 						<li><a href="#error">Gym Locator</a></li>
@@ -93,13 +93,14 @@
 		</div>
 
 		
-		<div data-role="footer" data-position="fixed" data-id="home">
+		<div data-role="footer" data-position="fixed" data-id="home" align="center">
+			<img src="images/h4.png"></img>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" class="ui-btn-active">Home</a></li>
-					<li><a href="#info">Info</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="additem.html" data-ajax="false">Tracker</a></li>
+					<li><a href="#home" data-icon="home" data-posicon="top" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
+					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
+					<li><a href="additem.html" data-icon="edit" data-posicon="top" data-ajax="false">Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -114,9 +115,9 @@
 					
 		</div>
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="a">
 			
-			<ul data-role="listview" data-inset="true" data-theme="b">
+			<ul data-role="listview" data-inset="true">
 				<li><a href="#credits">Additional Information</a></li>
 				<li><a href="../GoldApp/index.html">Gold Application</a></li>
 				<li><a href="index.html">Bronze Application</a></li>
@@ -126,15 +127,15 @@
 			</ul>
 		</div>
 		
-		<div data-role="footer" data-position="fixed" data-id="home">
-		
+		<div data-role="footer" data-position="fixed" data-id="home" align="center">
+			<img src="images/h4.png"></img>
 		
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top" class="ui-btn-active">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top">News</a></li>
-					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="add.html" data-icon="edit" data-posicon="top" data-ajax="false">Tracker</a></li>
 				</ul>
 			</div>
 		</div>
@@ -151,7 +152,7 @@
 	
 		
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="a">
 			<h3>News Feed</h3>
 			
 			<ul data-role="listview">
@@ -340,33 +341,35 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed" data-id="home">
+		<div data-role="footer" data-position="fixed" data-id="home" align="center">
+			<img src="images/h4.png"></img>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-posicon="top">Home</a></li>
 					<li><a href="#info" data-icon="info" data-posicon="top">Info</a></li>
 					<li><a href="#news" data-icon="grid" data-posicon="top" class="ui-btn-active">News</a></li>
-					<li><a href="#tracker" data-icon="edit" data-posicon="top" >Tracker</a></li>
+					<li><a href="add.html" data-icon="edit" data-posicon="top" data-ajax="false">Tracker</a></li>
 				</ul>
 			</div>
 		</div>
 		
 	</div>
 	
-		<div data-role="page" id="error" data-add-back-btn="true">
+	<div data-role="page" id="error" data-add-back-btn="true">
 		
-		<div data-role="header" data-position="fixed" data-id="home">
+			<div data-role="header" data-position="fixed" data-id="home">
 		
 			<h1>Health & Wellness</h1>
 					
 		</div>
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="a">
 			<h3>Error 404: Your content cannot be found!</h3>
 			<p>The information you are attempting to access cannot be located.  Please hit the back button and make another selection.</p>
 		</div>
 		
-		<div data-role="footer" data-position="fixed" data-id="home">
+		<div data-role="footer" data-position="fixed" data-id="home" align="center">
+			<img src="images/h4.png"></img>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
@@ -378,8 +381,8 @@
 		</div>
 		
 	</div>
-	
-		<div data-role="page" id="exercise" data-add-back-btn="true">
+
+	<div data-role="page" id="exercise" data-add-back-btn="true">
 		
 		<div data-role="header" data-position="fixed" data-id="home">
 		
@@ -388,7 +391,7 @@
 		</div>
 		
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="a">
 			<ul data-role="listview">
 				<li>
 					<a href="#error">
@@ -436,8 +439,8 @@
 		</div>
 			
 	
-		<div data-role="footer" data-position="fixed" data-id="home">
-			<h4>Footer</h4>
+		<div data-role="footer" data-position="fixed" data-id="home" align="center">
+			<img src="images/h4.png"></img>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
@@ -450,7 +453,7 @@
 		
 	</div>
 
-		<div data-role="page" id="nutrition" data-add-back-btn="true">
+	<div data-role="page" id="nutrition" data-add-back-btn="true">
 		
 		<div data-role="header" data-position="fixed" data-id="home">
 		
@@ -459,7 +462,7 @@
 		</div>
 		
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="a">
 					
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Fats</h3>
@@ -509,7 +512,7 @@
 		
 	</div>
 	
-		<div data-role="page" id="credits" data-add-back-btn="true">
+	<div data-role="page" id="credits" data-add-back-btn="true">
 		
 		<div data-role="header" data-position="fixed" data-id="home">
 		
@@ -517,7 +520,7 @@
 					
 		</div>
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="a">
 			<h3>Credits:</h3>
 			<ul>
 				<li>This applications change in direction was inspired by health.com</li>
@@ -544,8 +547,10 @@
 		
 	</div>
 
-		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
 	</body>
