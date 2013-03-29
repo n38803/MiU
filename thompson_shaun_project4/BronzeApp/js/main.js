@@ -1,6 +1,6 @@
 //Shaun Thompson
-//MiU 1302 - Project 3
-//03/21/13
+//MiU 1303 - Project 4
+//03/28/13
 
 
 // Wait until the DOM is ready

@@ -1,6 +1,6 @@
 //Shaun Thompson
-//MiU 1303 - Project 3 [modified JS file]
-//03/21/2013
+//MiU 1303 - Project 4 [modified JS file]
+//03/28/2013
 
 var parseTracker = function(data){
 	console.log(data);
@@ -60,6 +60,59 @@ $('#tracker').on('pageinit', function(){
 				localStorage.setItem(id, JSON.stringify(item));
 			
 	};
+	
+			//clear all data
+			function clearLocal(){
+				if(localStorage.length === 0){
+					alert("There is no data to clear!");
+				}else{
+					localStorage.clear();
+					alert("All meals have been erased.");
+					window.location.reload();
+					return false;
+				};
+			};
+			
+			//Write data from local storage
+			function getData(){
+				if(localStorage.length === 0){
+					alert("There are no meals currently tracked so default information has been loaded.");
+					autoFill();
+				};
+				toggleControls("on");
+				var makeDiv = document.createElement('div');
+				makeDiv.setAttribute("id", "items");
+				var makeList = document.createElement('ul');
+				makeDiv.appendChild(makeList);
+				document.body.appendChild(makeDiv);
+				$('items').style.display = "block";
+				for(var i=0, len=localStorage.length; i<len;i++){
+					var makeli = document.createElement('li');
+					var linksLi = document.createElement('li');
+					makeList.appendChild(makeli);
+					var key = localStorage.key(i);
+					var value = localStorage.getItem(key);
+			
+					//Convert the string from local storage
+						var obj = JSON.parse(value);
+						var makeSublist = document.createElement('ul');
+						makeli.appendChild(makeSublist);
+			
+					//call image function
+					getImage(obj.type[1], makeSublist);
+			
+					for(var n in obj){
+						var makeSubli = document.createElement('li');
+						makeSublist.appendChild(makeSubli);
+						var optSubText = obj[n][0]+" "+obj[n][1];
+						makeSubli.innerHTML = optSubText;		
+						makeSublist.appendChild(linksLi);
+					};
+		
+				//Create our edit & delete buttons for local storage
+				makeItemLinks(localStorage.key(i), linksLi);
+				};
+			};
 		
 		}
 	});
